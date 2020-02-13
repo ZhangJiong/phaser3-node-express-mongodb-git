@@ -7,6 +7,15 @@ type nul>main.js
 
 # git
 git init
+git status
+git commit -m "part1-01 http://localhost:3000/  404 - Not Found "
+git log
+git log --pretty=oneline
+git diff
+退出 git 英文状态下按 Q
+
+git commit -m "part1-01 change app.js main/routes "
+
 
 # npm
 npm init -f
