@@ -1,6 +1,6 @@
 # dependencies  npm包文件
 /node_modules
-readMe.md
+
 # production  打包文件
 /build
 
