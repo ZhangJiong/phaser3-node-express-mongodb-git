@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(bodyParser.json()); // parse application/json
  
 // main routes
-const routes = require('./routes/main');
+app.use('/', routes);
  
 // catch all other routes
 app.use((req, res, next) => {
