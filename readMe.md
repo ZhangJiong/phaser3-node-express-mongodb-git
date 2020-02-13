@@ -18,6 +18,8 @@ git diff
 git commit -m "part1-01 change app.js main/routes "
 git log --pretty=oneline
 
+git commit -m "part1 done!"
+
 # npm
 npm init -f
 cnpm install --save --save-dev express body-parser dotenv
