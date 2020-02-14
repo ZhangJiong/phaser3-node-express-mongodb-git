@@ -55,6 +55,8 @@ Git鼓励大量使用分支：
 删除分支：git branch -d <name>
 
 git commit -m "git branch"
+git commit -m ""
+git commit -m "Part 4 add client assets done!"
 
 # npm
 npm init -f
