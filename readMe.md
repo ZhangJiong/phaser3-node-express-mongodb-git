@@ -13,6 +13,7 @@ curl -X POST http://localhost:3000/login  -H 'Content-Type: application/json'   
 curl -X POST http://localhost:3000/submit-score  -H 'Content-Type: application/json'   -d "email=test4@test.com" -d "score=100"
 
 # git
+## master 主线
 git init
 git add .
 git status
@@ -20,13 +21,23 @@ git commit -m "part1-01 http://localhost:3000/  404 - Not Found "
 git log
 git log --pretty=oneline
 git diff
-退出 git 英文状态下按 Q
+
+## 退出 git 英文状态下按 Q
 git commit -m "part1-01 change app.js main/routes "
 git log --pretty=oneline
+git reflog
 git commit -m "part1 done!"
 git checkout -- app.js
 git commit -m "part1(new readMe.md)"
 git commit -m "part2 1.connect mongodb ok; 2.add mongoose & bcrypt"
+git commit -m "Part 3 end!"
+git clone 
+
+## branch 分支
+git checkout -b dev
+git branch dev
+git checkout dev
+git branch
 
 # npm
 npm init -f

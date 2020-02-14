@@ -3,6 +3,8 @@ const routes = require('./routes/main');
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const passport = require('passport');
 
 // reads in our .env file and makes those values available as environment variables
 require('dotenv').config();
@@ -26,10 +28,14 @@ const app = express();
 // update express settings
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
+app.use(cookieParser());
  
+// require passport auth
+require('./auth/auth');
+
 // main routes
 app.use('/', routes);
-app.use('/', secureRoutes);
+app.use('/', passport.authenticate('jwt', { session : false }), secureRoutes);
  
 // catch all other routes
 app.use((req, res, next) => {
