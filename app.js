@@ -1,11 +1,24 @@
+const secureRoutes = require('./routes/secure');
 const routes = require('./routes/main');
-
-// reads in our .env file and makes those values available as environment variables
-require('dotenv').config();
- 
+const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+// reads in our .env file and makes those values available as environment variables
+require('dotenv').config();
+
+
+// setup mongo connection
+const uri = process.env.MONGO_CONNECTION_URL;
+mongoose.connect(uri, { useNewUrlParser : true, useCreateIndex: true });
+mongoose.connection.on('error', (error) => {
+  console.log(error);
+  process.exit(1);
+});
+mongoose.connection.on('connected', function () {
+  console.log('connected to mongo');
+});
+ 
  
 // create an instance of an express app
 const app = express();
@@ -16,6 +29,7 @@ app.use(bodyParser.json()); // parse application/json
  
 // main routes
 app.use('/', routes);
+app.use('/', secureRoutes);
  
 // catch all other routes
 app.use((req, res, next) => {
