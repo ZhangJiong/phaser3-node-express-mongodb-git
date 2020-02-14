@@ -58,6 +58,7 @@ git commit -m "git branch"
 git commit -m ""
 git commit -m "Part 4 add client assets done!"
 git commit -m "Part 5 add forget-password page"
+git commit -m "Part 5 end!"
 
 # npm
 npm init -f
@@ -65,8 +66,9 @@ cnpm install --save --save-dev express body-parser dotenv
 node app.js
 cnpm install --save --save-dev mongoose
 cnpm install --save --save-dev bcrypt
-cnpm install --save cookie-parser passport passport-local passport-jwt jsonwebtoken
+cnpm install --save --save-dev cookie-parser passport passport-local passport-jwt jsonwebtoken
+cnpm install --save --save-dev nodemailer-express-handlebars nodemailer
 
-express body-parser dotenv mongoose bcrypt cookie-parser passport passport-local passport-jwt jsonwebtoken
+express body-parser dotenv mongoose bcrypt cookie-parser passport passport-local passport-jwt jsonwebtoken nodemailer-express-handlebars nodemailer
 
 # node
