@@ -60,6 +60,8 @@ git commit -m "Part 4 add client assets done!"
 git commit -m "Part 5 add forget-password page"
 git commit -m "Part 5 end!"
 
+git remote add origin git@github.com:ZhangJiong/phaser3-node-express-mongodb-git.git
+
 # npm
 npm init -f
 cnpm install --save --save-dev express body-parser dotenv
