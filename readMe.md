@@ -57,6 +57,7 @@ Git鼓励大量使用分支：
 git commit -m "git branch"
 git commit -m ""
 git commit -m "Part 4 add client assets done!"
+git commit -m "Part 5 add forget-password page"
 
 # npm
 npm init -f
