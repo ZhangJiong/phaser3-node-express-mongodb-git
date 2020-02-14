@@ -26,15 +26,16 @@ git log --pretty=oneline
 git commit -m "part1 done!"
 git checkout -- app.js
 git commit -m "part1(new readMe.md)"
+git commit -m "part2 1.connect mongodb ok; 2.add mongoose & bcrypt"
 
 # npm
 npm init -f
 cnpm install --save --save-dev express body-parser dotenv
 node app.js
-
 cnpm install --save --save-dev mongoose
 cnpm install --save --save-dev bcrypt
+cnpm install --save cookie-parser passport passport-local passport-jwt jsonwebtoken
 
-express body-parser dotenv mongoose bcrypt
+express body-parser dotenv mongoose bcrypt cookie-parser passport passport-local passport-jwt jsonwebtoken
 
 # node
