@@ -38,6 +38,8 @@ git checkout -b dev
 git branch dev
 git checkout dev
 git branch
+git commit -m "branch test"
+git checkout master
 
 # npm
 npm init -f
