@@ -59,8 +59,10 @@ git commit -m ""
 git commit -m "Part 4 add client assets done!"
 git commit -m "Part 5 add forget-password page"
 git commit -m "Part 5 end!"
+git commit -m "push to github"
 
 git remote add origin git@github.com:ZhangJiong/phaser3-node-express-mongodb-git.git
+git pull
 
 # npm
 npm init -f
