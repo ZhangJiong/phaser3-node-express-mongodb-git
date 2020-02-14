@@ -40,6 +40,21 @@ git checkout dev
 git branch
 git commit -m "branch test"
 git checkout master
+git merge dev
+git branch -d dev
+git branch
+git switch -c dev
+git switch master
+
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>或者git switch <name>
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+git commit -m "git branch"
 
 # npm
 npm init -f
