@@ -1,3 +1,11 @@
+
+This source code is from https://phasertutorials.com 
+- [Phaser Leaderboard with User Authentication using Node + Express + MongoDB – Part 1](https://phasertutorials.com/creating-a-phaser-3-leaderboard-with-user-authentication-using-node-js-express-mongodb-part-1/)
+- [Phaser Leaderboard with User Authentication using Node + Express + MongoDB – Part 2](https://phasertutorials.com/creating-a-phaser-3-leaderboard-with-user-authentication-using-node-express-mongodb-part-2/)
+- [Phaser Leaderboard with User Authentication using Node + Express + MongoDB – Part 3](https://phasertutorials.com/phaser-leaderboard-with-user-authentication-using-node-express-mongodb-part-3/)
+- [Phaser Leaderboard with User Authentication using Node + Express + MongoDB – Part 4](https://phasertutorials.com/phaser-leaderboard-with-user-authentication-using-node-express-mongodb-part-4/)
+- [Phaser Leaderboard with User Authentication using Node + Express + MongoDB – Part 5](https://phasertutorials.com/phaser-leaderboard-with-user-authentication-using-node-express-mongodb-part-5/)
+
 # cmd
 ```bash
 mkdir .env
@@ -59,11 +67,13 @@ git commit -m "Part 4 add client assets done!"
 git commit -m "Part 5 add forget-password page"
 git commit -m "Part 5 end!"
 git commit -m "push to github"
+git commit -m "readMe.md update"
 
 git remote add origin git@github.com:ZhangJiong/phaser3-node-express-mongodb-git.git
 git pull
 git push
 git branch --set-upstream-to=origin/master
+git push -u origin master -f
 ```
 
 # npm
@@ -80,3 +90,6 @@ express body-parser dotenv mongoose bcrypt cookie-parser passport passport-local
 ```
 
 # node
+```bash
+node app.js
+```
